@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #111;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buttons {
+  margin-bottom: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.buttons button {
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 2px #1d1d1d;
+          box-shadow: 0 0 2px #1d1d1d;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  width: 15%;
+  height: 40px;
+  color: black;
+}
+
+.buttons button:hover {
+  background-color: #1d1d1d;
+  border: 1px solid white;
+  color: white;
+}
+
+.buttons .purple {
+  background-color: #7209b7;
+}
+
+.buttons .blue {
+  background-color: #023e8a;
+}
+
+.buttons .red {
+  background-color: #9d0208;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 420px;
+  padding: 5px 0px;
+  border: 1px solid #1d1d1d;
+  border-radius: 7px;
+}
+
+.container .square {
+  background-color: #1d1d1d;
+  -webkit-box-shadow: 0 0 2px #000;
+          box-shadow: 0 0 2px #000;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+.container .square:hover {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.default {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.default .default-btn {
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 2px #1d1d1d;
+          box-shadow: 0 0 2px #1d1d1d;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  width: 15%;
+  height: 40px;
+  color: black;
+}
+
+.default .default-btn:hover {
+  background-color: #1d1d1d;
+  border: 1px solid white;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
