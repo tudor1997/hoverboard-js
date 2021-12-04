@@ -54,8 +54,10 @@ body{
     align-items: center;
     justify-content:center;
     flex-wrap: wrap;
-    max-width: 400px;
-
+    max-width: 420px;
+    padding:5px 0px;
+    border:1px solid #1d1d1d;
+    border-radius:7px;
     .square{
         background-color:#1d1d1d;
         box-shadow:0 0 2px #000;

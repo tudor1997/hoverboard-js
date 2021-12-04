@@ -86,7 +86,10 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 420px;
+  padding: 5px 0px;
+  border: 1px solid #1d1d1d;
+  border-radius: 7px;
 }
 
 .container .square {
