@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     margin:0;
     padding:0;
@@ -11,6 +12,7 @@ body{
     height:100vh;
     overflow:hidden;
     flex-direction: column;
+    font-family:"Montserrat", sans-serif;
 }
 .buttons{
     margin-bottom:40px;
