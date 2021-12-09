@@ -13,19 +13,56 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #111;
   height: 100vh;
-  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.buttons {
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.content .buttons {
   margin-bottom: 40px;
   width: 100%;
   display: -webkit-box;
@@ -35,12 +72,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 60px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.buttons button {
+.content .buttons button {
   border: none;
   padding: 10px;
   margin: 5px;
@@ -52,32 +93,33 @@ body {
   cursor: pointer;
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
-  width: 15%;
+  width: 50%;
+  min-width: 150px;
   height: 40px;
   color: black;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
-.buttons button:hover {
+.content .buttons button:hover {
   background-color: #1d1d1d;
   border: 1px solid white;
   color: white;
 }
 
-.buttons .purple {
+.content .buttons .purple {
   background-color: #7209b7;
 }
 
-.buttons .blue {
+.content .buttons .blue {
   background-color: #023e8a;
 }
 
-.buttons .red {
+.content .buttons .red {
   background-color: #9d0208;
 }
 
-.container {
+.content .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +137,7 @@ body {
   border-radius: 7px;
 }
 
-.container .square {
+.content .container .square {
   background-color: #1d1d1d;
   -webkit-box-shadow: 0 0 2px #000;
           box-shadow: 0 0 2px #000;
@@ -106,12 +148,12 @@ body {
   transition: 2s ease;
 }
 
-.container .square:hover {
+.content .container .square:hover {
   -webkit-transition-duration: 0s;
           transition-duration: 0s;
 }
 
-.default {
+.content .default {
   margin-top: 20px;
   width: 100%;
   display: -webkit-box;
@@ -122,7 +164,7 @@ body {
           justify-content: center;
 }
 
-.default .default-btn {
+.content .default .default-btn {
   border: none;
   padding: 10px;
   margin: 5px;
@@ -134,14 +176,29 @@ body {
   cursor: pointer;
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
-  width: 15%;
+  width: 50%;
+  min-width: 150px;
   height: 40px;
   color: black;
 }
 
-.default .default-btn:hover {
+.content .default .default-btn:hover {
   background-color: #1d1d1d;
   border: 1px solid white;
   color: white;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    height: 100%;
+    gap: 4.5rem;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
