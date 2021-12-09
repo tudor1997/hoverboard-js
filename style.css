@@ -187,4 +187,18 @@ h1 {
   border: 1px solid white;
   color: white;
 }
+
+@media screen and (max-width: 780px) {
+  body {
+    height: 100%;
+    gap: 4.5rem;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
